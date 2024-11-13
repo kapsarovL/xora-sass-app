@@ -1,10 +1,11 @@
 import clsx from "clsx";
+import PropTypes from 'prop-types';
 
 const TestimonialItem = ({ item, containerClassName }) => {
   return (
     <div
     className={clsx(
-        "relative px-14 pb-14 pt-11 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 max-md:pt-11 after:max-md:-right-4"
+        "relative px-14 pb-14 pt-11 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 max-md:pt-11 after:max-md:-right-4",
         containerClassName,
     )}
     >
@@ -26,5 +27,10 @@ const TestimonialItem = ({ item, containerClassName }) => {
     </div>
   )
 }
+
+TestimonialItem.propTypes = {
+  item: PropTypes.object.isRequired,
+  containerClassName: PropTypes.string,
+};
 
 export default TestimonialItem;
