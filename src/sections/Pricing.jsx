@@ -12,12 +12,12 @@ const Pricing = () => {
     <section>
         <Element name="pricing">
             <div className="container">
-                <div className="relative pb-40 mx-auto border-r max-w-980 pricing_before border-1 border-s2 bg-s1/50 pt-28 max-lg:border-none max-md:pb-32 max-md:pt-16">
+                <div className="relative pb-40 mx-auto border-l border-r max-w-960 pricing-head_before border-s2 bg-s1/50 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
                 <h3 className="relative max-w-lg mx-auto text-center h3 max-lg:h4 max-md:h5 z-3 mb-14 text-p4 max-md-:mb-11 max-sm:max-w-sm">
                     Flexible pricing for teams of all sizes
                 </h3>
 
-                <div className="relative z-4 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[320px]">
+                <div className="relative z-4 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]">
                 <button 
                 className={clsx(
                     "pricing-head_btn", monthly && "text-p4"
@@ -58,7 +58,7 @@ const Pricing = () => {
                     {plans.map((plan, index) => (
                         <div 
                         key={plan.id}
-                        className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]"
+                        className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 max-xl:min-w-80 max-lg:rounded-3xl p-7 xl:w-[calc(33.33%+2px)]"
                         >
                             {index === 1 && (
                                 <div className="absolute top-0 left-0 g4 h-30 z-1 rounded-tl-3xl rounded-tr-3xl" />
