@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Marker = ({ fill }) => {
   return (
     <svg
@@ -16,5 +18,9 @@ const Marker = ({ fill }) => {
     </svg>
   );
 };
+
+Marker.propTypes = {
+  fill: PropTypes.string.isRequired
+}
 
 export default Marker;

@@ -1,5 +1,6 @@
 import clsx from "clsx";
-import { Marker } from "./Marker.jsx";
+import PropTypes from "prop-types";
+import Marker  from "./Marker.jsx";
 
 const Button = ({
   icon,
@@ -54,4 +55,16 @@ const Button = ({
     </button>
   );
 };
+
+Button.propTypes = {
+  icon: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
+  href: PropTypes.string,
+  containerClassName: PropTypes.string,
+  onClick: PropTypes.func,
+  markerFill: PropTypes.string,
+};
+
+ 
+
 export default Button;
