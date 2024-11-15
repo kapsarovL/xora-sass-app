@@ -1,5 +1,12 @@
 import PropTypes from "prop-types";
 
+/**
+ * The Marker component returns an SVG element that represents a marker with a specified fill color.
+ * @param {Object} props - The props object containing the fill color for the marker.
+ * @param {string} props.fill - The fill color for the marker. If not provided, defaults to '#2EF2FF'.
+ * @returns {JSX.Element} - The SVG element representing the marker.
+ */
+
 const Marker = ({ fill }) => {
   return (
     <svg

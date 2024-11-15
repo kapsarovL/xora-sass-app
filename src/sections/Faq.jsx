@@ -2,6 +2,13 @@ import {Element} from "react-scroll";
 import {faq} from "../constants/index";
 import FaqItem from "../components/FaqItem.jsx";
 
+/**
+ * A React component that displays a Frequently Asked Questions (FAQ) section.
+ * The FAQ items are fetched from a constant array and displayed in two columns.
+ *
+ * @return {JSX.Element} The rendered FAQ section.
+ */
+
 const Faq = () => {
     const halfLength = Math.floor(faq.length / 2);
 

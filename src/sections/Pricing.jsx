@@ -5,10 +5,25 @@ import CountUp from "react-countup";
 import {plans} from "../constants/index";
 import Button from "../components/Button";
 
+/**
+ * The Pricing component displays a section for pricing plans.
+ * It allows users to toggle between monthly and annual pricing.
+ *
+ * @returns {JSX.Element} The rendered Pricing component.
+ */
+
 const Pricing = () => {
+
+    /**
+     * State to track whether the pricing is displayed monthly or annually.
+     * @type {boolean}
+     */
+
     const [monthly, setMonthly] = useState(false);
 
   return (
+            // ...rest of the component
+
     <section>
         <Element name="pricing">
             <div className="container">

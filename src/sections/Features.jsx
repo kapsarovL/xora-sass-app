@@ -3,6 +3,17 @@ import {Element} from "react-scroll";
 import {details, features} from "../constants/index";
 import Button from "../components/Button";
 
+/**
+ * @function Features
+ * @description
+ * Renders a section displaying a list of features and details.
+ * It includes an icon, title, text, button, and caption for each feature.
+ * Additionally, it displays a list of details, each including an icon and title.
+ *
+ * @returns {JSX.Element}
+ * Returns a JSX element that represents the Features section.
+ */
+
 const Features = () => {
   return (
     <section>

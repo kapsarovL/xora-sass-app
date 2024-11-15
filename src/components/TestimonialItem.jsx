@@ -1,6 +1,13 @@
 import clsx from "clsx";
 import PropTypes from 'prop-types';
 
+/**
+ * TestimonialItem component is used to display a single testimonial with the given item details.
+ * @param {Object} item - The testimonial data including comment, avatarUrl, name, and role.
+ * @param {string} containerClassName - Optional additional class names to be applied to the container.
+ * @returns {JSX.Element} - A JSX element containing the rendered testimonial.
+ */
+
 const TestimonialItem = ({ item, containerClassName }) => {
   return (
     <div

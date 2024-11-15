@@ -2,6 +2,15 @@ import {Element} from "react-scroll";
 import {links, logos} from "../constants/index";
 import Marker from "../components/Marker";
 
+/**
+ * Download Component
+ *
+ * This component is used to display the download section of the application.
+ * It shows a list of links for different platforms where the application can be downloaded.
+ * It also displays a preview image of the application and a list of logos of the supported platforms.
+ *
+ * @returns {JSX.Element} - JSX Element representing the download section
+ */
 
 const Download = () => {
   return (

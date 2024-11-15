@@ -1,7 +1,14 @@
+import PropTypes from 'prop-types';
 import { Link as LinkScroll } from "react-scroll";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 
+/**
+ * A functional component that renders the header of the application.
+ * It includes navigation links, a logo, and a toggle button for mobile devices.
+ *
+ * @returns {JSX.Element} The header component.
+ */
 const Header = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +25,14 @@ const Header = () => {
     };
   }, []);
 
+  /**
+   * A functional component that renders a navigation link.
+   *
+   * @param {Object} props - The properties passed to the component.
+   * @param {string} props.title - The title of the navigation link.
+   * @returns {JSX.Element} The navigation link component.
+   */
+
   const NavLink = ({ title }) => (
     <LinkScroll
       onClick={() => setIsOpen(false)}
@@ -32,6 +47,9 @@ const Header = () => {
     </LinkScroll>
   );
 
+  NavLink.propTypes = {
+    title: PropTypes.string.isRequired,
+  };
   
 
   return (

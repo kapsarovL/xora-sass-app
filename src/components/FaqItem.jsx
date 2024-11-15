@@ -4,10 +4,23 @@ import {SlideDown} from "react-slidedown";
 import PropTypes from 'prop-types';
 import "react-slidedown/lib/slidedown.css";
 
+/**
+ * The FaqItem component is a functional component that renders a single FAQ item.
+ * It takes in two props: `item` and `index`.
+ *
+ * @param {Object} props - The properties passed to the component.
+ * @param {Object} props.item - The FAQ item object with `question`, `id`, and `answer` properties.
+ * @param {number} props.index - The index of the FAQ item in the list.
+ * @returns {JSX.Element} - A JSX element representing the FAQ item.
+ */
+
 const FaqItem = ({item, index}) => {
     const [activeId, setActiveId] = useState(null);
 
     const active = activeId === item.id;
+
+    // JSX code for the FaqItem component
+    // ..
 
   return (
     <div className="relative mb-16 z-2">

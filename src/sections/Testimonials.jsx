@@ -1,6 +1,16 @@
 import {testimonials} from "../constants/index.jsx";
 import TestimonialItem from "../components/TestimonialItem";
 
+/**
+ * Testimonials component
+ *
+ * This component renders a section containing testimonials. The testimonials are imported from
+ * a constants file and are split into two columns. The first half of the testimonials are rendered
+ * in the left column, and the second half are rendered in the right column.
+ *
+ * @returns {JSX.Element} A section containing the testimonials.
+ */
+
 const Testimonials = () => {
     const halfLength = Math.floor(testimonials.length / 2);
 

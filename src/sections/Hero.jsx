@@ -1,6 +1,13 @@
 import {Element, Link as LinkScroll } from "react-scroll";
 import Button from "../components/Button.jsx";
 
+/**
+Renders the Hero section of the application.
+This section includes a title, a subtitle, and a description,
+along with a call-to-action button that scrolls to the features section.
+@returns {JSX.Element} The JSX element for the Hero section.
+ */
+
 const Hero = () => {
     return (
       <section className="relative pb-40 pt-60 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
